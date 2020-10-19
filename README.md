@@ -37,7 +37,7 @@ MIT
 
 ## Author Information
 
-Luiz Teixeira (@luyz25)
+Luiz Teixeira
 
 This project is a fork for:
-  https://github.com/jaredhocutt/ansible-gnome-extensions - Jared Hocutt (@jaredhocutt)]
+  https://github.com/jaredhocutt/ansible-gnome-extensions - Jared Hocutt
