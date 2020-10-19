@@ -9,7 +9,7 @@
     suffix: ".gnome_extension_download"
   register: r_gnome_extension_download_dir
   changed_when: no
-  when: r_gnome_extensions_check_existing.stat.exists == False
+  when: not r_gnome_extensions_check_existing.stat.exists
 
 - name: Install Gnome Shell
   block:
@@ -43,4 +43,4 @@
         path: "{{ r_gnome_extension_download_dir.path }}"
         state: absent
       changed_when: no
-  when: r_gnome_extensions_check_existing.stat.exists == False
+  when: not r_gnome_extensions_check_existing.stat.exists
