@@ -34,9 +34,7 @@
         remote_src: yes
 
     - name: Enable Gnome Shell extension - {{ gnome_extension_info.name }}
-      shell: gnome-shell-extension-tool --enable-extension {{ gnome_extension_info.uuid }}
-      args:
-        executable: /bin/bash
+      command: gnome-shell-extension-tool --enable-extension {{ gnome_extension_info.uuid }}
   always:
     - name: Delete temporary download directory
       file:
