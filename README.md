@@ -24,7 +24,7 @@ None
 ```yaml
 - hosts: servers
   roles:
-    - role: luyz25.gnome_extensions
+    - role: luizgavalda.gnome_extensions
       vars:
         gnome_extension_ids:
           - 964
